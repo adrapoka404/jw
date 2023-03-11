@@ -13,7 +13,7 @@ module.exports = {
       },
       fontFamily: {
         'nunito': ['sans-serif'],
-        'felix': ['sans-serif'],
+        'dm': ['DM Serif Display', 'serif'],
       },
       dropShadow:{
         '3xl':'10px 15px 5px rgba(0, 0, 0, 1)',

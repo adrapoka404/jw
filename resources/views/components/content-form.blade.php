@@ -1,5 +1,5 @@
-<div class="my-5">
-    <div class=" font-nunito font-light text-2xl">
+<div class="my-3">
+    <div class=" font-nunito font-light text-lg">
         {{$label}}
     </div>
     <div class="input w-full pr-5">
