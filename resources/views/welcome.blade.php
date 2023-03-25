@@ -30,12 +30,12 @@
 <body class="antialiased bg-black max-w-7xl mx-auto">
     <!-- NavBar -->
     <div class=" bg-white z-40 w-full mx-auto">
-        <header class=" fixed shadow-md  z-50 w-full py-2 flex items-center bg-black">
-            <div class="bg-black flex items-center">
+        <header class=" lg:fixed shadow-md  z-50 w-full py-2 flex items-center bg-black">
+            <div class="bg-black lg:flex items-center">
                 <a href="#inicio" class=" ml-28">
-                    <img src="{{ url('imgs/logo.png') }}" alt="{{ __('Jonh Wood') }}" class=" w-80">
+                    <img src="{{ url('imgs/logo.png') }}" alt="{{ __('Jonh Wood') }}" class=" w-80 mx-auto">
                 </a>
-                <div class=" bg-[url('/imgs/fondo_menu.jpeg')] w-full ml-10"
+                <div class=" bg-[url('/imgs/fondo_menu.jpeg')] w-full lg:ml-10"
                     style="background-image: url({{ url('imgs/fondo_menu.png') }})">
                     <!-- bg-gradient-to-r from-gold-600 via-gold-500 to-gold-300 hover:bg-white w-full opacity-20   -->
                     <a href="#inicio"
@@ -73,16 +73,16 @@
         @endif
 
         <div class="">
-            <div class=" pt-16 items-center">
-                <div class="mt-5 w-full bg-contain bg-no-repeat "
+            <div class=" lg:pt-16 items-center">
+                <div class="lg:mt-5 w-full bg-contain bg-no-repeat "
                     style="background-image: url({{ url('imgs/fondo_espiral.png') }}); 
                     background-repeat: no-repeat;
                     background-size: cover    ;
                     position: relative;">
                     <div id=""
-                        class=" mt-10 w-full  dark:bg-gray-800 overflow-hidden items-center my-5">
+                        class=" lg:mt-10 w-full  dark:bg-gray-800 overflow-hidden items-center my-5">
                         <div
-                            class=" leading-loose  text-4xl tracking-wider font-nunito font-medium text-gold-300 w-4/5 mt-40 ml-16 ">
+                            class=" leading-loose  text-4xl tracking-wider font-nunito font-medium text-gold-300 w-4/5 lg:mt-40 ml-16 ">
                             Somos un servicio de <strong class="font-nunito font-bold">Gestión inmobiliaria</strong> de
                             excelencia con propiedades y
                             oportunidades de inversión en <strong class="font-nunito font-bold">México y Estados
@@ -95,10 +95,10 @@
                             <x-slot name="title">PILARES</x-slot>
                         </x-title>
                         
-                        <div class="w-full grid grid-cols-2">
+                        <div class="w-full grid grid-cols-1 lg:grid-cols-2">
                             <div class=" pl-10 items-center w-full ">
 
-                                <div class="border-b-4 border-b-gold-300 w-1/2 font-nunito font-bold text-2xl">
+                                <div class="border-b-4 text-gold-300 lg:text-black border-b-white lg:border-b-gold-300 w-1/2 font-nunito font-bold text-2xl">
                                     Atención Premium
                                 </div>
                                 <div class="flex items-center">
@@ -110,7 +110,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="items-center w-full ">
+                            <div class="pl-10 lg:pl-0 items-center w-full ">
 
                                 <div class="border-b-4 border-b-gold-300 w-1/3 font-nunito font-bold text-2xl mt-10">
                                     Experiencia
@@ -126,7 +126,7 @@
                                 </div>
                             </div>
 
-                            <div class=" pl-8 items-center w-full ">
+                            <div class=" pl-10 lg:pl-8 my-5 items-center w-full ">
 
                                 <div class="border-b-4 border-b-gold-300 w-1/3 font-nunito font-bold text-2xl">
                                     Profesionalización
@@ -142,7 +142,7 @@
                                 </div>
                             </div>
 
-                            <div class="pt-10    items-center w-full mb-5">
+                            <div class="pl-10 lg:pl-0 pt-10    items-center w-full mb-5">
 
                                 <div class="border-b-4 border-b-gold-300 w-1/3 font-nunito font-bold text-2xl">
                                     Transparencia
@@ -170,14 +170,14 @@
                             <x-slot name="flex"></x-slot>
                             <x-slot name="title">Servicios Integrales</x-slot>
                         </x-title>
-                        <div class="grid grid-rows-6 grid-flow-col gap-2 items-center ">
+                        <div class="grid grid-rows-6 grid-flow-row lg:grid-flow-col gap-2 items-center ">
                             <div class=" font-bold font-nunito text-2xl my-4">
                                 <img src="{{ url('imgs/d1.png') }}" alt="" class="w-5 h-5 inline">
                                  Coaching
                                 inmobiliario
                             </div>
-                            <div class=" font-bold font-nunito text-2xl my-4">
-                                <img src="{{ url('imgs/d2.png') }}" alt="" class="w-5 h-5 inline"> Agentes
+                            <div class=" font-bold font-nunito text-2xl my-4 justify-end ">
+                                <img src="{{ url('imgs/d2.png') }}" alt="" class="w-5 h-5 inline justify-end"> Agentes
                                 Internacionales
                             </div>
                             <div class=" font-bold font-nunito text-2xl my-4">
@@ -219,7 +219,7 @@
                                 Captación de Propiedades
                             </div>
                         </div>
-                        <div class="flex justify-end mr-56 -pt-16">
+                        <div class="flex justify-end lg:mr-56 -pt-16">
                             <a href="#" class=" rounded-full bg-gold-300 hover:bg-gold-600 px-10 py-3">Ver
                                 más</a>
                         </div>
@@ -232,7 +232,7 @@
                         <x-slot name="title">propiedades</x-slot>
                     </x-title>
                     
-                    <div class="grid grid-cols-3 mt-5">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 mt-5">
                         
                         <x-properties >
                             <x-slot name='fondo'>{{url('imgs/casa1.jpeg')}}</x-slot>
@@ -281,10 +281,10 @@
                         <x-slot name="flex"></x-slot>
                         <x-slot name="title">franquicias</x-slot>
                     </x-title>
-                    <div class="px-24 mt-5 font-nunito text-justify ">
+                    <div class="px-5 lg:px-24 mt-5 font-nunito text-justify ">
                         Gracias por su interés en crecer con John Woods. Nuestras franquicias aún no están disponibles, pero le pedimos a los interesados llenar el siguiente formulario. Cuando estemos listos para franquiciar, lo contactaremos.
                     </div>
-                    <div class="grid grid-cols-2 text-white  px-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 text-white px-5 lg:px-24">
                         <x-content-form>
                             <x-slot name='label'>Nombre*</x-slot>
                             <x-slot name='input'>
@@ -402,14 +402,14 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     position: relative;">
-                    <div class="w-1/3 relative bg-contain"
+                    <div class="hidden lg:block w-1/3 relative bg-contain"
                     style="background-image: url({{ url('imgs/fondo_contacto2.png') }}); 
                     background-repeat: no-repeat;
                     background-size: cover;
                     position: relative;">
                         
                     </div>
-                    <div class="w-2/3 pl-8">
+                    <div class="w-full lg:w-2/3 pl-8">
                         <div class="grid grid-rows-2 text-center w-full ">
                             <div class=" border-b-4 border-b-black w-full font-dm uppercase text-4xl font-bold text-black ">
                                 Contacto
@@ -417,7 +417,7 @@
                             <div class=" fornt-nunito font-regular text-xl">Para obtener más información sobre nuestros servicios déjanos tus datos y un asesor se comunicará contigo.</div>
                         </div>
                         <div class="form">
-                            <div class="grid grid-cols-2">
+                            <div class="grid grid-cols-1 lg:grid-cols-2">
                                 <x-input-contact>
                                     <x-slot name="type">text</x-slot>
                                     <x-slot name="name">contact_name</x-slot>
@@ -447,7 +447,7 @@
                             <x-textarea-contact />
                         </div>
                         <div class="flex justify-start py-10 pr-10">
-                            <a href="#" class=" rounded-full bg-gold-300 hover:bg-gold-600 px-10 py-3">
+                            <a href="#" class=" rounded-full bg-gold-600 hover:bg-gold-300 px-10 py-3">
                                 Enviar
                             </a>
                         </div>        
@@ -455,29 +455,30 @@
 
                     </div>
                 </div>
+                
             </div>
             <div id="footer "
-                    class="mt-8 w-full grid md:grid-cols-2 text-white font-nunito font-light tracking-widest">
+                    class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 text-white font-nunito font-light tracking-widest">
                     <div>
                         <div class="mb-10 p-10">
                             <img src="{{url('imgs/logo_footer.png')}}" alt="">
                         </div>
-                        <div class="flex items-center">
-                            <div class="flex">
-                                <div class="w-10 h-10 mx-2 cursor-pointer">
-                                    <img src="{{url('imgs/ico_whats.png')}}" alt="">
+                        <div class=" flex flex-col items-center">
+                            <div class="flex items-center">
+                                <div class="w-1/4 lg:w-10 mx-2 cursor-pointer">
+                                    <img src="{{url('imgs/ico_whats.png')}}" alt="" class="w-10 h-10 ">
                                 </div>
-                                <div class="w-10 h-10 mx-2 cursor-pointer">
-                                    <img src="{{url('imgs/ig_color.png')}}" alt="">
+                                <div class="w-1/4 lg:w-10 h-10 mx-2 cursor-pointer">
+                                    <img src="{{url('imgs/ig_color.png')}}" alt="" class="w-10 h-10 ">
                                 </div>
-                                <div class="w-10 h-10 mx-2 cursor-pointer">
-                                    <img src="{{url('imgs/fb_color.png')}}" alt="">
+                                <div class="w-1/4 lg:w-10 h-10 mx-2 cursor-pointer">
+                                    <img src="{{url('imgs/fb_color.png')}}" alt="" class="w-10 h-10 ">
                                 </div>
                                 <!--div class="w-10 h-10 mx-2 cursor-pointer">
                                     <img src="{{url('imgs/tw_color.png')}}" alt="">
                                     </div-->
-                                <div class="w-10 h-10 mx-2 cursor-pointer">
-                                    <img src="{{url('imgs/tt_color.png')}}" alt="">
+                                <div class="w-1/4 lg:w-10 h-10 mx-2 cursor-pointer">
+                                    <img src="{{url('imgs/tt_color.png')}}" alt="" class="w-10 h-10 ">
                                     </div>
                                 <!--div class="w-10 h-10 mx-2 cursor-pointer">
                                     <img src="{{url('imgs/yt_color.png')}}" alt="">
@@ -485,7 +486,7 @@
                             </div>
                             <div class="ml-5 align-text-bottom content-center"> Contáctanos</div>
                         </div>
-                        <div class="my-5">
+                        <div class="my-5 w-full text-center">
                             <div>Metepec, Estado de México</div>
                             <div>COPYRIGHT Todos los derechos Reservados</div>
                         </div>
@@ -496,23 +497,22 @@
                             <div class="my-5">Nuestro equipo</div>
                             <div class="my-5">Aviso de privacidad</div>
                         </div>
-                        <div class="flex flex-inline items-end">
-                            <div class="w-2/3">
-                                <img src="{{url('imgs/security.png')}}" alt="w-56">
+                        <div class="lg:flex lg:flex-inline lg:items-end">
+                            <div class="w-2/3 mx-auto">
+                                <img src="{{url('imgs/security.png')}}" alt="w-56" class="mx-auto animate-pulse">
                             </div>
-                            <div class="w-1/3">Certificado de Seguridad</div>
+                            <div class="w-1/3 mx-auto">Certificado de Seguridad</div>
                         </div>
                     </div>
             </div>
             
         </div>
+        
     </div>
     @yield('jquery')
 </body>
 <script>
-    $(document).ready(function() {
-        console.log('jalou madre foca');
-    })
 </script>
 
 </html>
+

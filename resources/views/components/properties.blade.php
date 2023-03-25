@@ -1,4 +1,4 @@
-<div class="mx-16 drop-shadow-3xl shadow-black bg-white">
+<div class="my-5 lg:my-0 mx-16 drop-shadow-3xl shadow-black bg-white">
     <div class="w-full h-56"
         style="background-image: url({{ $fondo }}); 
     background-repeat: no-repeat;

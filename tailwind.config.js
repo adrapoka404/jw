@@ -30,6 +30,8 @@ module.exports = {
       },
       'black': '#000',
       'white': '#fff',
+      'red' : '#cb3234',
+      'berdoso': '#008f39',
       
     },
   },
