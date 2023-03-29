@@ -282,8 +282,9 @@
                         pero le pedimos a los interesados llenar el siguiente formulario. Cuando estemos listos para
                         franquiciar, lo contactaremos.
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 text-white px-5 lg:px-24">
-                        <form id="form_information">
+                    <form id="form_information">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 text-white px-5 lg:px-24">
+
                             @csrf
                             <x-content-form>
                                 <x-slot name='label'>Nombre*</x-slot>
@@ -388,15 +389,16 @@
                             </x-content-form>
 
 
-                    </div>
-                    <div class="flex justify-end py-10 pr-10">
-                        <span class=" rounded-full bg-gold-300 hover:bg-gold-600 px-10 py-3 cursor-pointer "
-                            id="btn_send_information">
-                            Enviar
-                        </span>
-                    </div>
-                    </form>
+                        </div>
+                        <div class="flex justify-end py-10 pr-10">
+                            <span class=" rounded-full bg-gold-300 hover:bg-gold-600 px-10 py-3 cursor-pointer "
+                                id="btn_send_information">
+                                Enviar
+                            </span>
+                        </div>
+
                 </div>
+                </form>
                 <div id="who"
                     class="mt-8 w-full  first-letter:mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div id="contacto" class="w-full flex"
