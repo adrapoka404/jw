@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\RequestContactStore;
 use App\Http\Requests\RequestInformationStore;
-use App\Models\franchise;
+use App\Models\Franchise;
 use App\Models\TableContact;
 use Illuminate\Http\Request;
 
@@ -28,7 +28,7 @@ class ContactController extends Controller
     {
 
         
-        $franquicia = franchise::create($request->all());
+        $franquicia = Franchise::create($request->all());
  
         return $franquicia;
     }
